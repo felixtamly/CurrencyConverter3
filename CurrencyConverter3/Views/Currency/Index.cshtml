@@ -19,7 +19,6 @@
 	}
 </table>
 
-
 @using(Html.BeginForm("Convert", "Currency", FormMethod.Post))
 {
     <fieldset>
@@ -33,3 +32,5 @@
         </p>
     </fieldset>
 }
+
+@TempData["ConversionResult"]

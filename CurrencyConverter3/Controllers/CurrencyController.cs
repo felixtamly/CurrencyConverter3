@@ -38,7 +38,9 @@ namespace CurrencyConverter3.Controllers
             StringBuilder Result = new StringBuilder();
             Result.Append(OriginalAmount + " " + OriginalName + " = " + TargetAmount + " " + TargetName);
 
-            return Content(Result.ToString());
+            TempData["ConversionResult"] = Result.ToString();
+            // return Content(Result.ToString());
+            return RedirectToAction("Index");
         }
     }
 }

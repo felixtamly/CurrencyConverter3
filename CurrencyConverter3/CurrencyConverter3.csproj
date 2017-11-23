@@ -90,6 +90,7 @@
     <Content Include="packages.config" />
     <Content Include="Views\Currency\Index.cshtml" />
     <Content Include="Views\Currency\Converter.cshtml" />
+    <Content Include="Views\Currency\NavBar.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

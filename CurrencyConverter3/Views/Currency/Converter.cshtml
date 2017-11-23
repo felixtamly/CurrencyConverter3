@@ -14,7 +14,7 @@
     using (Html.BeginForm("Convert", "Currency", FormMethod.Get))
 		{
         From
-		@Html.TextBoxFor(Conversion => Conversion.OriginalAmount)
+		
 		@Html.DropDownList("FromCurrencyType")
 		To
 		@Html.DropDownList("ToCurrencyType")
