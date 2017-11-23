@@ -27,7 +27,7 @@ namespace CurrencyConverter3.Controllers
         }
 
         [HttpPost]
-        public PartialViewResult Convert()
+        public ActionResult Convert()
         {
             FreeConverter Converter = new FreeConverter(CurrencyList);
             double OriginalAmount = Double.Parse(Request["OriginalAmountText"]);
@@ -38,12 +38,7 @@ namespace CurrencyConverter3.Controllers
             StringBuilder Result = new StringBuilder();
             Result.Append(OriginalAmount + " " + OriginalName + " = " + TargetAmount + " " + TargetName);
 
-            return PartialView(Result.ToString());
-        }
-
-        public string Welcome(string name, int numTimes = 1)
-        {
-            return HttpUtility.HtmlEncode("Hello " + name + "NumTimes is " + numTimes);
+            return Content(Result.ToString());
         }
     }
 }

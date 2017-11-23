@@ -20,9 +20,8 @@
 </table>
 
 
-@using(Ajax.BeginForm("Convert", "Currency", new AjaxOptions { UpdateTargetId = "ConversionResult"} ))
+@using(Html.BeginForm("Convert", "Currency", FormMethod.Post))
 {
-<div id="ConversionResult"></div>
     <fieldset>
         Currency Available <br>
 	    From @Html.TextBox("OriginalAmountText")
@@ -34,4 +33,3 @@
         </p>
     </fieldset>
 }
-
