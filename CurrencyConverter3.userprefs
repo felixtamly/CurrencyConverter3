@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{4E693A0C-D308-4BA6-95B0-9BA1A9EF83C8}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CurrencyConverter3/Views/Currency/Index.cshtml">
+    <Files>
+      <File FileName="CurrencyConverter3/Models/Currency.cs" Line="16" Column="10" />
+      <File FileName="CurrencyConverter3/Models/XmlToCurrencyListConverter.cs" Line="3" Column="18" />
+      <File FileName="CurrencyConverter3/Controllers/CurrencyController.cs" Line="64" Column="13" />
+      <File FileName="CurrencyConverter3/Views/Currency/Index.cshtml" Line="22" Column="1" />
+      <File FileName="CurrencyConverter3/Models/FreeConverter.cs" Line="19" Column="10" />
+      <File FileName="CurrencyConverter3/Models/RateFinder.cs" Line="39" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CurrencyConverter3 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

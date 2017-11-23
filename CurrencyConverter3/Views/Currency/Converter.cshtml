@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+@using CurrencyConverter3.Models
+@model CurrencyConverter3.Models.Conversion
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Converter</title>
+</head>
+<body>
+@{
+    using (Html.BeginForm("Convert", "Currency", FormMethod.Get))
+		{
+        From
+		@Html.TextBoxFor(Conversion => Conversion.OriginalAmount)
+		@Html.DropDownList("FromCurrencyType")
+		To
+		@Html.DropDownList("ToCurrencyType")
+		<input type="submit" value="Convert" />
+		}
+}
+</body>
+</html>
+

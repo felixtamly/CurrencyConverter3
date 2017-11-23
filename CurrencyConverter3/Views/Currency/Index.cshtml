@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@using CurrencyConverter3.Models;
+@model IEnumerable<CurrencyConverter3.Models.Currency>
+
+<h2>Currency List</h2>
+<table class="table table-bordered">
+<tr>
+<th>Currency Name</th>
+		<th>Rate</th>
+	</tr>
+	@foreach (var item in Model)
+	{
+	<tr>
+	<td>@Html.DisplayFor(modelItem => item.Name)</td>
+    <td>@Html.DisplayFor(modelItem => item.Rate)</td>
+	</tr>
+	}
+</table>
+
+
+@using(Ajax.BeginForm("Convert", "Currency", new AjaxOptions { UpdateTargetId = "ConversionResult"} ))
+{
+<div id="ConversionResult"></div>
+    <fieldset>
+        Currency Available <br>
+	    From @Html.TextBox("OriginalAmountText")
+	    @Html.DropDownList("FromCurrencyType")
+        To
+        @Html.DropDownList("ToCurrencyType")
+        <p>
+            <input type="submit" value="Convert" />
+        </p>
+    </fieldset>
+}
+
